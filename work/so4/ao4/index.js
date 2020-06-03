@@ -11,12 +11,13 @@ const routeIndex = require("./route/index.js");
 const routeToday = require("./route/today.js");
 const middleware = require("./middleware/index.js");
 
+
 app.set("view engine", "ejs");
 
 app.use(middleware.logIncomingToConsole);
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/", routeIndex);
-app.use("/today", routeToday);
+app.use("/lotto", routeToday);
 app.listen(port, logStartUpDetailsToConsole);
 
 
