@@ -1,6 +1,4 @@
-/**
- * Route for today.
- */
+
 "use strict";
 
 var express = require("express");
@@ -17,7 +15,7 @@ for (i = 0; i < 8; i++) {
 }
     data.date = data;
 
-    res.render("today", data);
+    res.render("lotto", data);
 });
 
 module.exports = router;
