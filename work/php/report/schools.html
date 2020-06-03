@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>schools</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <script src= 
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
+        </script> 
+</head>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  
+
+
+
+<script>
+   function createSchoolTable(){
+ const fetch = require('node-fetch')
+ const fs = require('fs');
+    
+   var url = 'https://api.scb.se/UF0109/v2/skolenhetsregister/sv/kommun/1472' 
+  
+   fetch(url).then((response) =>{
+        return response.json();
+   }).then((myJson)=> {
+    console.log(myJson)
+      fs.writeFile("schoolsFromTibro.json", JSON.stringify(myJson), 'utf8', function(err){
+     if(err){
+       console.log("an error has occured ")
+       return console.log(err)
+     }
+   console.log("file saved ")
+    });
+   }).then((myJson)=>{
+      // var myJsonObject = myJson;
+      // console.log(myJsonObject);   
+ 
+   });
+   
+}
+
+function tableBuilder(data){ 
+//   var loadData = fs.readFileSync('/home/john/Music/webprog/schoolsFromTibro.json', 'utf8');
+//  var data = JSON.parse(loadData);
+//  console.log(data)
+  $.getJSON('schoolsFromTibro.json', function(data){
+         var school_data = '';
+        console.log(data)
+         $.each(data.Skolenheter, function(key, value){
+             school_data += '<tr>';
+                 school_data += '<td>' + value.Skolenhetsnamn + '</td>';
+                 school_data += '<td>' + value.Skolenhetskod + '</td>';
+                 school_data += '<td>' + value.Kommunkod + '</td>';
+                 school_data += '<td>' + value.PeOrgNr + '</td>';
+             school_data += '</tr>';
+             });
+         $('#table').append(school_data);
+            });
+                  }
+</script>
+
+<body id = "body">
+  <div id="duck" class="duck"></div>
+  <input type="button" onclick="tableBuilder()" value="Schools in Tibro !"/>
+    <p id="showschools"></p>
+    <table id="table" >
+      <thead class="thead">
+        <tr>
+            <th>SkolenhetsName</th>
+            <th>Skolenhetskod</th>
+            <th>KommunKod</th>
+            <th>PeOrgNr</th>
+        </tr>
+    </thead>
+    </table>
+    <script type="text/javascript" src="js/duck.js" ></script>
+</body>
+
+</html>
