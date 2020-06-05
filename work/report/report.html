@@ -122,7 +122,7 @@
 
 <section>
 <h2>S07</h2>
-<p>Here is the text for this section.</p>
+<p>Here is the tex</p>
 </section>
 
 <section>
@@ -132,7 +132,29 @@
 
 <section>
 <h2>S09</h2>
-<p>Here is the text for this section.</p>
+<p>The following are the 3 security issues: 
+    1. Someone one try to drop all tables in a sql database. This was common as a joke when were were testing each others applications
+    during the earlier courses. This is called Injects and is 1 on the OWASP list of web app security risks. This happens when someone sends extra "text" with a sql query, maybe from a web form, and can preform operations on the DB 
+    
+    2. Badly set user permissions have caused issues in places I have worked previously. Primarly from empolyees accessing thing that they should not be allowed to access. 
+    This could also be abused by a attacker to get access to services or data that could be abused for future attacks. This is 5 on the OWASP list which is broken access control. 
+
+    3. Someone using XSS for redirects is a concern of mine. This can expose the user to malicious sites, be used to hijack a user session and more. Number 7 on the OWASP list. 
+
+
+    New web programmer guide: 
+    If I was going to give a guide to a new web programmer I would say the following things: 
+    1. Be sure to do indepth research about headers, this is a easy attack vector for hackers and is still an issue on old websites today. 
+    2. Make a security plan - meet with the team and discuss the different users and what they should be able to do on the application. Also look for potential threats and use abstraction. 
+    3. Do threat analysis regularly.  
+    4. Use authetication from a cloud service if possible. They will handle a lot of the risk for you. 
+    5. Make sure to use encryption and be sure to make sure you are using something like sha256 or newer to avoid security messures that are already broken
+    6. Keep good logs and make sure to hide error messages from users, use a custom error message instead. 
+    7. Be aware of XSS and Insecure deserialization. 
+   
+    TIL: There are many attack vectors in web application development and must be avoid at all costs. There is plenty of information on being secure when building a web app, but they change quickly. OWASP is a good place to start for keeping track of current high risk threats.  
+
+</p>
 </section>
 
 <section>
