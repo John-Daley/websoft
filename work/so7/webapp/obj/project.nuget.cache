@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xvhfQnC0apNGrQTfocdbp/Q8m5+xWkv9VDyE+3UaJFXnZpAlJTPokAotz8N9oi+8tXyu3gNF8AoMdzUvOagqOw==",
+  "success": true,
+  "projectFilePath": "/home/john/Music/webprog/work/so7/webapp/webapp.csproj",
+  "expectedPackageFiles": [
+    "/home/john/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.2/microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

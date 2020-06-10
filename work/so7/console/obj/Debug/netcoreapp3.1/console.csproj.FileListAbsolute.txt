@@ -1,0 +1,15 @@
+/home/john/Music/webprog/work/so7/console/bin/Debug/netcoreapp3.1/console
+/home/john/Music/webprog/work/so7/console/bin/Debug/netcoreapp3.1/console.deps.json
+/home/john/Music/webprog/work/so7/console/bin/Debug/netcoreapp3.1/console.runtimeconfig.json
+/home/john/Music/webprog/work/so7/console/bin/Debug/netcoreapp3.1/console.runtimeconfig.dev.json
+/home/john/Music/webprog/work/so7/console/bin/Debug/netcoreapp3.1/console.dll
+/home/john/Music/webprog/work/so7/console/bin/Debug/netcoreapp3.1/console.pdb
+/home/john/Music/webprog/work/so7/console/obj/Debug/netcoreapp3.1/console.csprojAssemblyReference.cache
+/home/john/Music/webprog/work/so7/console/obj/Debug/netcoreapp3.1/console.AssemblyInfoInputs.cache
+/home/john/Music/webprog/work/so7/console/obj/Debug/netcoreapp3.1/console.AssemblyInfo.cs
+/home/john/Music/webprog/work/so7/console/obj/Debug/netcoreapp3.1/console.csproj.CoreCompileInputs.cache
+/home/john/Music/webprog/work/so7/console/obj/Debug/netcoreapp3.1/console.dll
+/home/john/Music/webprog/work/so7/console/obj/Debug/netcoreapp3.1/console.pdb
+/home/john/Music/webprog/work/so7/console/obj/Debug/netcoreapp3.1/console.genruntimeconfig.cache
+/home/john/Music/webprog/work/so7/console/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/home/john/Music/webprog/work/so7/console/obj/Debug/netcoreapp3.1/console.csproj.CopyComplete
