@@ -80,7 +80,11 @@
 
 <section>
 <h2>S05</h2>
-<p>Here is the text for this section.</p>
+<p>The php language is nice to work with so far. But this is of course a very simple implementation and I used your boilerplate code so it will be more challenging in future projects
+    I think php was a little more work to set up the express/node.js but after figuring out the xampp situation and getting sql and such through there I was happy to use php. 
+    I mainly followed your instructions and also used the resources you linked. I use linx so I followed your instructions and it went smooth enough. I am satisfied with my result because I only want grade 3. 
+    This sections of the course showed how Php could be used with xampp and apache to make a simple crud database app. It also showed uses for Php
+</p>
 </section>
 
 <section>
