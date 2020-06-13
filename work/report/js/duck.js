@@ -4,7 +4,7 @@
     var area = document.body,
     areaHeight = window.innerHeight,
     areaWidth = window.innerWidth,
-    timer = 1000
+    timer = 1000,
     duck = document.createElement('img');
 
     
